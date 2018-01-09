@@ -1,13 +1,15 @@
+
+
 object Functionalities {
 
 
-  def stringInterpolationAndList(inputList: List[Int]) = {
+  def stringInterpolationAndList(inputList: List[Int]): Unit= {
 
     val result = for (index <- 0 until inputList.length) yield s"${index} = ${inputList(index)}"
 
-    //    println(result.mkString("\n"))
 
-    result foreach println
+    print(result.mkString("\n"))
+
 
   }
 
